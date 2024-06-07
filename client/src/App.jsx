@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {fetchAllNotes} from "./services/api.js"
+import NoteList from "./components/NoteList"
+import NoteEditor from "./components/NoteEditor"
 import './App.css'
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className='App'>
       <h1>My Notes</h1>
+      {/* <NoteEditor /> */}
       <NoteList notes={notes} />
     </div>
   )

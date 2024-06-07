@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchAllNotes, createNote, updateNote } from './services/api';
+import { fetchAllNotes, createNote, updateNote, deleteNote } from './services/api';
 import NoteList from './components/NoteList';
 import NoteEditor from './components/NoteEditor';
 import './App.css';
